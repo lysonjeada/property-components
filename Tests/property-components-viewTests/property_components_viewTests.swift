@@ -1,14 +1,16 @@
 //
-//  components_viewTests.swift
-//  components-viewTests
+//  property_components_viewTests.swift
+//  property-components-viewTests
 //
-//  Created by Amaryllis Rosemaria Baldrez Calefi on 31/07/24.
-//
+//  Created by Amaryllis Rosemaria Baldrez Calefi on 01/08/24.
+// x-xcode-log://97EC052E-CB64-4B21-BF58-57B182518378 target 'components-view' referenced in product 'property-components-view' is empty
+
+
+
 
 import XCTest
-@testable import components_view
 
-final class components_viewTests: XCTestCase {
+final class property_components_viewTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

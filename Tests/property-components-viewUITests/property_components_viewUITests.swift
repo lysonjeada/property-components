@@ -1,13 +1,13 @@
 //
-//  components_viewUITests.swift
-//  components-viewUITests
+//  property_components_viewUITests.swift
+//  property-components-viewUITests
 //
-//  Created by Amaryllis Rosemaria Baldrez Calefi on 31/07/24.
+//  Created by Amaryllis Rosemaria Baldrez Calefi on 01/08/24.
 //
 
 import XCTest
 
-final class components_viewUITests: XCTestCase {
+final class property_components_viewUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

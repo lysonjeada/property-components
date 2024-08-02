@@ -1,18 +1,23 @@
 // swift-tools-version: 5.9
-// The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
     name: "Components",
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "Components",
-            targets: ["Components"]),
+            name: "property-components-view",
+            targets: ["components-view"]),
     ],
     targets: [
-        // Targets are the basic building blocks of a package, defining a module or a test suite.
-        // Targets can depend on other targets in this package and products from dependencies.
+        .target(
+            name: "components-view",
+            dependencies: []),
+        .testTarget(
+            name: "property-components-viewTests",
+            dependencies: ["components-view"]),
+        .testTarget(
+            name: "property-components-viewUITests",
+            dependencies: ["components-view"]),
     ]
 )
