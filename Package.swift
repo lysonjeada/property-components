@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "Components",
+    name: "property-components-view",
     products: [
         .library(
             name: "property-components-view",
