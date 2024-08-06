@@ -3,21 +3,30 @@
 import PackageDescription
 
 let package = Package(
-    name: "property-components-view",
+    name: "Components",
+    platforms: [
+        .macOS(.v10_15),
+        .iOS(.v13),
+        .tvOS(.v13),
+        .watchOS(.v6)
+    ],
     products: [
         .library(
-            name: "property-components-view",
-            targets: ["components-view"]),
+            name: "Components",
+            targets: ["Components"]),
+    ],
+    dependencies: [
+        .package(url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.10.0")
     ],
     targets: [
         .target(
-            name: "components-view",
+            name: "Components",
             dependencies: []),
         .testTarget(
-            name: "property-components-viewTests",
-            dependencies: ["components-view"]),
+            name: "ComponentsTests",
+            dependencies: ["Components"]),
         .testTarget(
-            name: "property-components-viewUITests",
-            dependencies: ["components-view"]),
+            name: "ComponentsUITests",
+            dependencies: ["Components"]),
     ]
 )
